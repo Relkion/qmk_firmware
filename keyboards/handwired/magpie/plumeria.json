@@ -1,41 +1,29 @@
 {
-    "keyboard_name": "dactyl_manuform_magpie",
-    "maintainer": "relkion and relkion's adhd",
-    "manufacturer": "relkion",
-    "url": "https://github.com/relkion",
-    "bootloader_instructions": "Hold 0,0 on the key matrix (upper Left)",
-    "tags": ["dactyl", "ergo", "split", "handwired", "rgb"],
-    "bootloader": "rp2040",
-    "processor": "RP2040",
+    "manufacturer": "???",
+    "keyboard_name": "dactyl_manuform/plumeria",
+    "maintainer": "relkion",
+    "url": "",
+    "bootloader": "stm32-dfu",
+    "processor": "STM32F411",
     "usb": {
-        "device_version": "0.0.1",
+        "device_version": "1.0.0",
         "pid": "0x0000",
         "vid": "0xFEED"
     },
     "features": {
         "bootmagic": true,
-        "nkro": true,
-        "combo": true,
+        "command": false,
+        "console": false,
+        "extrakey": true,
         "mousekey": true,
-        "leader": true,
-        "tri_layer": true,
-        "caps_word": true,
-        "audio": true,
-        "oled": true,
-        "encoder": true,
+        "nkro": true,
         "rgb_matrix": true,
-        "repeat_key": true
-   },
+        "rgblight": false
+    },
     "split": {
         "enabled": true,
         "handedness": {
             "matrix_grid": ["B6", "A8"]
-        }
-    },
-    "qmk": {
-        "locking": {
-            "enabled": true,
-            "resync": true
         }
     },
     "ws2812": {
@@ -60,7 +48,7 @@
         "rows": ["B12", "B13", "B14", "B15", "A8", "A10"]
     },
     "layouts": {
-        "LAYOUT_plumula_5x6_6": {
+        "LAYOUT_split_5x6_6": {
             "layout": [
                 {"matrix": [0, 0], "x": 0, "y": 0, "label": "~"},
                 {"matrix": [0, 1], "x": 1, "y": 0, "label": "1"},
@@ -112,9 +100,9 @@
                 {"matrix": [3, 3], "x": 3, "y": 3, "label": "C"},
                 {"matrix": [3, 4], "x": 4, "y": 3, "label": "V"},
                 {"matrix": [3, 5], "x": 5, "y": 3, "label": "B"},
-                {"matrix": [4, 4], "x": 6, "y": 3, "encoder": "0", "label": "CLOSE APP"},
+                {"matrix": [4, 4], "x": 6, "y": 3, "encoder": "ENC_L2", "label": "CLOSE APP"},
 
-                {"matrix": [10, 1], "x": 10, "y": 3, "encoder": "0","label": "CLOSE TAB"},
+                {"matrix": [10, 1], "x": 10, "y": 3, "encoder": "ENC_R2","label": "CLOSE TAB"},
                 {"matrix": [9, 0], "x": 11, "y": 3, "label": "N"},
                 {"matrix": [9, 1], "x": 12, "y": 3, "label": "M"},
                 {"matrix": [9, 2], "x": 13, "y": 3, "label": ","},

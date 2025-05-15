@@ -1,6 +1,4 @@
-# dactyl_manuform/plumeria
-
-![dactyl_manuform/plumeria](imgur.com image replace me!)
+# ???
 
 *A short description of the keyboard/project*
 
